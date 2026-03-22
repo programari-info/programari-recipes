@@ -5,34 +5,32 @@
     "copy-from-recipe": {
         "config/": "%CONFIG_DIR%/"
     },
-    "aliases": ["sylius-pifact-plugin"]
+    "aliases": ["sylius-pifact-plugin-recipe"]
 ,
     "add-lines": [
     {
         "file": "src/Entity/Addressing/Address.php",
-        "content": "\n\nuse Doctrine\ORM\Mapping as ORM;\nuse Programari\SyliusPifactPlugin\Entity\PifactAddressTrait;\n\n#[ORM\Entity]\n#[ORM\Table(name: 'sylius_address')]\n",
+        "content": "\n\nuse Doctrine\\ORM\\Mapping as ORM;\nuse Programari\\SyliusPifactPlugin\\Entity\\PifactAddressTrait;\n\n#[ORM\\Entity]\n#[ORM\\Table(name: 'sylius_address')]\n",
         "position": "after_target",
-        "target": "use Sylius\Component\Core\Model\Address as BaseAddress;"
+        "target": "use Sylius\\Component\\Core\\Model\\Address as BaseAddress;"
     },
-    "add-lines": [
     {
         "file": "src/Entity/Addressing/Address.php",
         "content": "\n\nuse PifactAddressTrait;",
         "position": "after_target",
         "target": "{"
     },
-    "add-lines": [
     {
         "file": "src/Entity/Channel/Channel.php",
-        "content": "\n\nuse Doctrine\ORM\Mapping as ORM;\nuse Programari\SyliusPifactPlugin\Entity\PifactChannelTrait;\n\n#[ORM\Entity]\n#[ORM\Table(name: 'sylius_channel')]\n",
+        "content": "\n\nuse Doctrine\\ORM\\Mapping as ORM;\nuse Programari\\SyliusPifactPlugin\\Entity\\PifactChannelTrait;\n\n#[ORM\\Entity]\n#[ORM\\Table(name: 'sylius_channel')]\n",
         "position": "after_target",
-        "target": "use Sylius\Component\Core\Model\Channel as BaseChannel;"
+        "target": "use Sylius\\Component\\Core\\Model\\Channel as BaseChannel;"
     },
-    "add-lines": [
     {
         "file": "src/Entity/Channel/Channel.php",
         "content": "\n\nuse PifactChannelTrait;",
         "position": "after_target",
         "target": "{"
     }
+    ]
 }
