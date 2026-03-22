@@ -11,7 +11,7 @@
     "recipe-conflicts": [],
     "versions": [],
     "branch": "main",
-    "is_contrib": false,
+    "is_contrib": true,
     "_links": {
         "repository": "github.com/programari-info/sylius-pifact-plugin",
         "origin_template": "{package}:{version}@github.com/programari-info/sylius-pifact-plugin:main",
