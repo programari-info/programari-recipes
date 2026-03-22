@@ -1,0 +1,2 @@
+imports:
+    - { resource: "@ProgramariSyliusPifactPlugin/config/config.yaml" }

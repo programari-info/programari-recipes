@@ -1,0 +1,2 @@
+programari_sylius_pifact:
+    resource: "@ProgramariSyliusPifactPlugin/config/routes.yaml"
