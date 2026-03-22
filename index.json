@@ -1,8 +1,4 @@
 {
-    "aliases": {
-        "sylius-pifact-plugin-recipe": "programari-info/sylius-pifact-plugin",
-        "syliuspifactpluginrecipe": "programari-info/sylius-pifact-plugin"
-    },
     "recipes": {
         "programari-info/sylius-pifact-plugin": [
             "1.0"
